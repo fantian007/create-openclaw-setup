@@ -1,0 +1,33 @@
+{
+  "name": "create-openclaw-setup",
+  "version": "1.0.0",
+  "description": "一键配置 OpenClaw：安装、飞书通道、模型切换",
+  "type": "module",
+  "bin": {
+    "create-openclaw-setup": "./bin/cli.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md"
+  ],
+  "keywords": [
+    "openclaw",
+    "feishu",
+    "lark",
+    "deepseek",
+    "ai",
+    "chatbot",
+    "setup",
+    "scaffold"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "ora": "^8.2.0",
+    "prompts": "^2.4.2"
+  }
+}
