@@ -1,0 +1,438 @@
+allow-lan: false
+external-controller: 127.0.0.1:9090
+ipv6: false
+log-level: warning
+mixed-port: 7893
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇭🇰 Air-香港01
+  network: tcp
+  port: 5011
+  reality-opts:
+    public-key: fyKxf85Bb2ky2yZS_ViLanJxucEFhj51oX08MrDEhCw
+    short-id: 4d957760b6390e4e
+  server: your-server.example.com
+  servername: support.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: your-uuid
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇭🇰 Air-香港02
+  network: tcp
+  port: 5012
+  reality-opts:
+    public-key: fyKxf85Bb2ky2yZS_ViLanJxucEFhj51oX08MrDEhCw
+    short-id: 4d957760b6390e4e
+  server: your-server.example.com
+  servername: support.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: your-uuid
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇭🇰 Air-香港03
+  network: tcp
+  port: 5013
+  reality-opts:
+    public-key: fyKxf85Bb2ky2yZS_ViLanJxucEFhj51oX08MrDEhCw
+    short-id: 4d957760b6390e4e
+  server: your-server.example.com
+  servername: support.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: your-uuid
+proxy-groups:
+- name: 🚀默认节点
+  proxies:
+  - 🇭🇰 Air-香港01
+  - 🇭🇰 Air-香港02
+  - 🇭🇰 Air-香港03
+  - 🇭🇰 Air-香港04
+  - 🇭🇰 Air-香港05
+  - 🇭🇰 Air-香港06
+  - 订阅专用节点01
+  - 订阅专用节点02
+  - 🇨🇳 Air-台湾01
+  - 🇨🇳 Air-台湾02
+  - 🇨🇳 Air-台湾03
+  - 🇨🇳 Air-台湾04
+  - 🇨🇳 Air-台湾05
+  - 🇨🇳 Air-台湾06
+  - 🇸🇬 Air-新加坡01
+  - 🇸🇬 Air-新加坡02
+  - 🇸🇬 Air-新加坡03
+  - 🇸🇬 Air-新加坡04
+  - 🇸🇬 Air-新加坡05
+  - 🇸🇬 Air-新加坡06
+  - 🇯🇵 Air-日本01
+  - 🇯🇵 Air-日本02
+  - 🇯🇵 Air-日本03
+  - 🇯🇵 Air-日本04
+  - 🇯🇵 Air-日本05
+  - 🇯🇵 Air-日本06
+  - 🇰🇷 Air-韩国01
+  - 🇰🇷 Air-韩国02
+  - 🇺🇸 Air-美国01
+  - 🇺🇸 Air-美国02
+  - 🇺🇸 Air-美国03
+  - 🇺🇸 Air-美国04
+  - 🇺🇸 Air-美国05
+  - 🇺🇸 Air-美国06
+  - 🇮🇳 Air-印度01
+  - 🇮🇳 Air-印度02
+  - 🇹🇭 Air-泰国01
+  - 🇹🇭 Air-泰国02
+  - 🇲🇳 Air-蒙古01
+  - 🇲🇳 Air-蒙古02
+  - 🇻🇳 Air-越南01
+  - 🇻🇳 Air-越南02
+  - 🇮🇩 Air-印尼01
+  - 🇮🇩 Air-印尼02
+  - 🇳🇱 Air-荷兰01
+  - 🇳🇱 Air-荷兰02
+  - 🇬🇧 Air-英国01
+  - 🇬🇧 Air-英国02
+  - 🇩🇪 Air-德国01
+  - 🇩🇪 Air-德国02
+  - 🇫🇷 Air-法国01
+  - 🇫🇷 Air-法国02
+  - 🇵🇱 Air-波兰01
+  - 🇵🇱 Air-波兰02
+  - 🇨🇦 Air-加拿大01
+  - 🇨🇦 Air-加拿大02
+  - 🇷🇺 Air-俄罗斯01
+  - 🇷🇺 Air-俄罗斯02
+  - 🇹🇷 Air-土耳其01
+  - 🇹🇷 Air-土耳其02
+  - 🇦🇷 Air-阿根廷01
+  - 🇦🇷 Air-阿根廷02
+  - 🇲🇾 Air-马来西亚01
+  - 🇲🇾 Air-马来西亚02
+  - 🇵🇰 Air-巴基斯坦01
+  - 🇵🇰 Air-巴基斯坦02
+  - 🇦🇺 Air-澳大利亚01
+  - 🇦🇺 Air-澳大利亚02
+  - 🚫不走代理
+  type: select
+- name: 🤖人工智能
+  proxies:
+  - 🚀默认节点
+  - 订阅专用节点01
+  - 订阅专用节点02
+  - 如您只看到我和订阅专用
+  - 请选订阅专用开启代理更新订阅
+  - 如果大部分节点异常
+  - 则节点失效需更新订阅
+  - 🇨🇳 Air-台湾01
+  - 🇨🇳 Air-台湾02
+  - 🇨🇳 Air-台湾03
+  - 🇨🇳 Air-台湾04
+  - 🇨🇳 Air-台湾05
+  - 🇨🇳 Air-台湾06
+  - 🇸🇬 Air-新加坡01
+  - 🇸🇬 Air-新加坡02
+  - 🇸🇬 Air-新加坡03
+  - 🇸🇬 Air-新加坡04
+  - 🇸🇬 Air-新加坡05
+  - 🇸🇬 Air-新加坡06
+  - 🇯🇵 Air-日本01
+  - 🇯🇵 Air-日本02
+  - 🇯🇵 Air-日本03
+  - 🇯🇵 Air-日本04
+  - 🇯🇵 Air-日本05
+  - 🇯🇵 Air-日本06
+  - 🇰🇷 Air-韩国01
+  - 🇰🇷 Air-韩国02
+  - 🇺🇸 Air-美国01
+  - 🇺🇸 Air-美国02
+  - 🇺🇸 Air-美国03
+  - 🇺🇸 Air-美国04
+  - 🇺🇸 Air-美国05
+  - 🇺🇸 Air-美国06
+  - 🇮🇳 Air-印度01
+  - 🇮🇳 Air-印度02
+  - 🇹🇭 Air-泰国01
+  - 🇹🇭 Air-泰国02
+  - 🇲🇳 Air-蒙古01
+  - 🇲🇳 Air-蒙古02
+  - 🇻🇳 Air-越南01
+  - 🇻🇳 Air-越南02
+  - 🇮🇩 Air-印尼01
+  - 🇮🇩 Air-印尼02
+  - 🇳🇱 Air-荷兰01
+  - 🇳🇱 Air-荷兰02
+  - 🇬🇧 Air-英国01
+  - 🇬🇧 Air-英国02
+  - 🇩🇪 Air-德国01
+  - 🇩🇪 Air-德国02
+  - 🇫🇷 Air-法国01
+  - 🇫🇷 Air-法国02
+  - 🇵🇱 Air-波兰01
+  - 🇵🇱 Air-波兰02
+  - 🇨🇦 Air-加拿大01
+  - 🇨🇦 Air-加拿大02
+  - 🇹🇷 Air-土耳其01
+  - 🇹🇷 Air-土耳其02
+  - 🇦🇷 Air-阿根廷01
+  - 🇦🇷 Air-阿根廷02
+  - 🇲🇾 Air-马来西亚01
+  - 🇲🇾 Air-马来西亚02
+  - 🇵🇰 Air-巴基斯坦01
+  - 🇵🇰 Air-巴基斯坦02
+  - 🇦🇺 Air-澳大利亚01
+  - 🇦🇺 Air-澳大利亚02
+  type: select
+- name: 📲电报信息
+  proxies:
+  - 🚀默认节点
+  - 🇭🇰 Air-香港01
+  - 🇭🇰 Air-香港02
+  - 🇭🇰 Air-香港03
+  - 🇭🇰 Air-香港04
+  - 🇭🇰 Air-香港05
+  - 🇭🇰 Air-香港06
+  - 订阅专用节点01
+  - 订阅专用节点02
+  - 如您只看到我和订阅专用
+  - 请选订阅专用开启代理更新订阅
+  - 如果大部分节点异常
+  - 则节点失效需更新订阅
+  - 🇨🇳 Air-台湾01
+  - 🇨🇳 Air-台湾02
+  - 🇨🇳 Air-台湾03
+  - 🇨🇳 Air-台湾04
+  - 🇨🇳 Air-台湾05
+  - 🇨🇳 Air-台湾06
+  - 🇸🇬 Air-新加坡01
+  - 🇸🇬 Air-新加坡02
+  - 🇸🇬 Air-新加坡03
+  - 🇸🇬 Air-新加坡04
+  - 🇸🇬 Air-新加坡05
+  - 🇸🇬 Air-新加坡06
+  - 🇯🇵 Air-日本01
+  - 🇯🇵 Air-日本02
+  - 🇯🇵 Air-日本03
+  - 🇯🇵 Air-日本04
+  - 🇯🇵 Air-日本05
+  - 🇯🇵 Air-日本06
+  - 🇰🇷 Air-韩国01
+  - 🇰🇷 Air-韩国02
+  - 🇺🇸 Air-美国01
+  - 🇺🇸 Air-美国02
+  - 🇺🇸 Air-美国03
+  - 🇺🇸 Air-美国04
+  - 🇺🇸 Air-美国05
+  - 🇺🇸 Air-美国06
+  - 🇮🇳 Air-印度01
+  - 🇮🇳 Air-印度02
+  - 🇹🇭 Air-泰国01
+  - 🇹🇭 Air-泰国02
+  - 🇲🇳 Air-蒙古01
+  - 🇲🇳 Air-蒙古02
+  - 🇻🇳 Air-越南01
+  - 🇻🇳 Air-越南02
+  - 🇮🇩 Air-印尼01
+  - 🇮🇩 Air-印尼02
+  - 🇳🇱 Air-荷兰01
+  - 🇳🇱 Air-荷兰02
+  - 🇬🇧 Air-英国01
+  - 🇬🇧 Air-英国02
+  - 🇩🇪 Air-德国01
+  - 🇩🇪 Air-德国02
+  - 🇫🇷 Air-法国01
+  - 🇫🇷 Air-法国02
+  - 🇵🇱 Air-波兰01
+  - 🇵🇱 Air-波兰02
+  - 🇨🇦 Air-加拿大01
+  - 🇨🇦 Air-加拿大02
+  - 🇷🇺 Air-俄罗斯01
+  - 🇷🇺 Air-俄罗斯02
+  - 🇹🇷 Air-土耳其01
+  - 🇹🇷 Air-土耳其02
+  - 🇦🇷 Air-阿根廷01
+  - 🇦🇷 Air-阿根廷02
+  - 🇲🇾 Air-马来西亚01
+  - 🇲🇾 Air-马来西亚02
+  - 🇵🇰 Air-巴基斯坦01
+  - 🇵🇰 Air-巴基斯坦02
+  - 🇦🇺 Air-澳大利亚01
+  - 🇦🇺 Air-澳大利亚02
+  type: select
+- name: 🌍环球剧场
+  proxies:
+  - 🚀默认节点
+  - 🇭🇰 Air-香港01
+  - 🇭🇰 Air-香港02
+  - 🇭🇰 Air-香港03
+  - 🇭🇰 Air-香港04
+  - 🇭🇰 Air-香港05
+  - 🇭🇰 Air-香港06
+  - 订阅专用节点01
+  - 订阅专用节点02
+  - 如您只看到我和订阅专用
+  - 请选订阅专用开启代理更新订阅
+  - 如果大部分节点异常
+  - 则节点失效需更新订阅
+  - 🇨🇳 Air-台湾01
+  - 🇨🇳 Air-台湾02
+  - 🇨🇳 Air-台湾03
+  - 🇨🇳 Air-台湾04
+  - 🇨🇳 Air-台湾05
+  - 🇨🇳 Air-台湾06
+  - 🇸🇬 Air-新加坡01
+  - 🇸🇬 Air-新加坡02
+  - 🇸🇬 Air-新加坡03
+  - 🇸🇬 Air-新加坡04
+  - 🇸🇬 Air-新加坡05
+  - 🇸🇬 Air-新加坡06
+  - 🇯🇵 Air-日本01
+  - 🇯🇵 Air-日本02
+  - 🇯🇵 Air-日本03
+  - 🇯🇵 Air-日本04
+  - 🇯🇵 Air-日本05
+  - 🇯🇵 Air-日本06
+  - 🇰🇷 Air-韩国01
+  - 🇰🇷 Air-韩国02
+  - 🇺🇸 Air-美国01
+  - 🇺🇸 Air-美国02
+  - 🇺🇸 Air-美国03
+  - 🇺🇸 Air-美国04
+  - 🇺🇸 Air-美国05
+  - 🇺🇸 Air-美国06
+  - 🇮🇳 Air-印度01
+  - 🇮🇳 Air-印度02
+  - 🇹🇭 Air-泰国01
+  - 🇹🇭 Air-泰国02
+  - 🇲🇳 Air-蒙古01
+  - 🇲🇳 Air-蒙古02
+  - 🇻🇳 Air-越南01
+  - 🇻🇳 Air-越南02
+  - 🇮🇩 Air-印尼01
+  - 🇮🇩 Air-印尼02
+  - 🇳🇱 Air-荷兰01
+  - 🇳🇱 Air-荷兰02
+  - 🇬🇧 Air-英国01
+  - 🇬🇧 Air-英国02
+  - 🇩🇪 Air-德国01
+  - 🇩🇪 Air-德国02
+  - 🇫🇷 Air-法国01
+  - 🇫🇷 Air-法国02
+  - 🇵🇱 Air-波兰01
+  - 🇵🇱 Air-波兰02
+  - 🇨🇦 Air-加拿大01
+  - 🇨🇦 Air-加拿大02
+  - 🇷🇺 Air-俄罗斯01
+  - 🇷🇺 Air-俄罗斯02
+  - 🇹🇷 Air-土耳其01
+  - 🇹🇷 Air-土耳其02
+  - 🇦🇷 Air-阿根廷01
+  - 🇦🇷 Air-阿根廷02
+  - 🇲🇾 Air-马来西亚01
+  - 🇲🇾 Air-马来西亚02
+  - 🇵🇰 Air-巴基斯坦01
+  - 🇵🇰 Air-巴基斯坦02
+  - 🇦🇺 Air-澳大利亚01
+  - 🇦🇺 Air-澳大利亚02
+  type: select
+- name: 📺国内影视
+  proxies:
+  - 🚫不走代理
+  - 🚀默认节点
+  - 🇭🇰 Air-香港01
+  - 🇭🇰 Air-香港02
+  - 🇭🇰 Air-香港03
+  - 🇭🇰 Air-香港04
+  - 🇭🇰 Air-香港05
+  - 🇭🇰 Air-香港06
+  - 订阅专用节点01
+  - 订阅专用节点02
+  - 如您只看到我和订阅专用
+  - 请选订阅专用开启代理更新订阅
+  - 如果大部分节点异常
+  - 则节点失效需更新订阅
+  - 🇨🇳 Air-台湾01
+  - 🇨🇳 Air-台湾02
+  - 🇨🇳 Air-台湾03
+  - 🇨🇳 Air-台湾04
+  - 🇨🇳 Air-台湾05
+  - 🇨🇳 Air-台湾06
+  - 🇸🇬 Air-新加坡01
+  - 🇸🇬 Air-新加坡02
+  - 🇸🇬 Air-新加坡03
+  - 🇸🇬 Air-新加坡04
+  - 🇸🇬 Air-新加坡05
+  - 🇸🇬 Air-新加坡06
+  - 🇯🇵 Air-日本01
+  - 🇯🇵 Air-日本02
+  - 🇯🇵 Air-日本03
+  - 🇯🇵 Air-日本04
+  - 🇯🇵 Air-日本05
+  - 🇯🇵 Air-日本06
+  - 🇰🇷 Air-韩国01
+  - 🇰🇷 Air-韩国02
+  - 🇺🇸 Air-美国01
+  - 🇺🇸 Air-美国02
+  - 🇺🇸 Air-美国03
+  - 🇺🇸 Air-美国04
+  - 🇺🇸 Air-美国05
+  - 🇺🇸 Air-美国06
+  - 🇮🇳 Air-印度01
+  - 🇮🇳 Air-印度02
+  - 🇹🇭 Air-泰国01
+  - 🇹🇭 Air-泰国02
+  - 🇲🇳 Air-蒙古01
+  - 🇲🇳 Air-蒙古02
+  - 🇻🇳 Air-越南01
+  - 🇻🇳 Air-越南02
+  - 🇮🇩 Air-印尼01
+  - 🇮🇩 Air-印尼02
+  - 🇳🇱 Air-荷兰01
+  - 🇳🇱 Air-荷兰02
+  - 🇬🇧 Air-英国01
+  - 🇬🇧 Air-英国02
+  - 🇩🇪 Air-德国01
+  - 🇩🇪 Air-德国02
+  - 🇫🇷 Air-法国01
+  - 🇫🇷 Air-法国02
+  - 🇵🇱 Air-波兰01
+  - 🇵🇱 Air-波兰02
+  - 🇨🇦 Air-加拿大01
+  - 🇨🇦 Air-加拿大02
+  - 🇷🇺 Air-俄罗斯01
+  - 🇷🇺 Air-俄罗斯02
+  - 🇹🇷 Air-土耳其01
+  - 🇹🇷 Air-土耳其02
+  - 🇦🇷 Air-阿根廷01
+  - 🇦🇷 Air-阿根廷02
+  - 🇲🇾 Air-马来西亚01
+  - 🇲🇾 Air-马来西亚02
+  - 🇵🇰 Air-巴基斯坦01
+  - 🇵🇰 Air-巴基斯坦02
+  - 🇦🇺 Air-澳大利亚01
+  - 🇦🇺 Air-澳大利亚02
+  type: select
+- hidden: true
+  name: 🚫不走代理
+  proxies:
+  - DIRECT
+  type: select
+rules:
+- IP-CIDR,10.0.0.0/8,🚫不走代理,no-resolve
+- IP-CIDR,192.168.0.0/16,🚫不走代理,no-resolve
+- DOMAIN-SUFFIX,openai.com,🤖人工智能
+- DOMAIN-SUFFIX,chatgpt.com,🤖人工智能
+- DOMAIN-SUFFIX,google.com,🌍环球剧场
+- DOMAIN-SUFFIX,youtube.com,🌍环球剧场
+- DOMAIN-SUFFIX,twitter.com,📲电报信息
+- DOMAIN-SUFFIX,x.com,📲电报信息
+- DOMAIN-SUFFIX,github.com,🚀默认节点
+- DOMAIN-SUFFIX,longbridge.com,🚀默认节点
+- MATCH,🚀默认节点
+socks-port: 7891

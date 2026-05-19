@@ -1,0 +1,7 @@
+.env
+*.log
+*.gz
+*.tar.gz
+/tmp/
+.DS_Store
+node_modules/
