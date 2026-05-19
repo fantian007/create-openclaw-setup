@@ -28,5 +28,6 @@ export async function setupService(ctx) {
   if (ctx.channel) lines.push(`  飞书: ON (domain=${ctx.channel})`);
   if (ctx.modelProvider) lines.push(`  模型: ${ctx.modelProvider}/${ctx.model}`);
   if (ctx.webhook) lines.push(`  Webhook: ${ctx.webhook} (port=${ctx.webhookPort})`);
+  if (ctx.tailscale && ctx.tailscale !== 'off') lines.push(`  Tailscale: ${ctx.tailscale}`);
   ctx.summary = lines.join('\n');
 }

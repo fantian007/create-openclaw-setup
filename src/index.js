@@ -5,6 +5,7 @@ import { runOnboard } from './steps/onboard.js';
 import { configChannel } from './steps/channel.js';
 import { configModel } from './steps/model.js';
 import { configWebhook } from './steps/webhook.js';
+import { configTailscale } from './steps/tailscale.js';
 import { setupService } from './steps/service.js';
 
 const steps = [
@@ -14,6 +15,7 @@ const steps = [
   { name: '飞书通道', fn: configChannel },
   { name: '模型配置', fn: configModel },
   { name: 'GitHub/GitLab Webhook', fn: configWebhook },
+  { name: 'Tailscale VPN', fn: configTailscale },
   { name: '服务部署', fn: setupService },
 ];
 
@@ -22,7 +24,7 @@ export async function run() {
    ╭──────────────────────────────────────╮
    │                                      │
    │   🦞  OpenClaw 一键配置脚手架         │
-   │   安装 · 通道 · 模型 · Webhook       │
+   │   安装·通道·模型·Webhook·VPN        │
    │                                      │
    ╰──────────────────────────────────────╯
   `));
